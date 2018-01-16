@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="keywords" content="云房数据,房地产数据,房地产数据公司" />
+	<meta name="description" content="云房数据作为独立的第三方房地产数据公司，以多维度房地产动态和静态数据为基础，通过大数据算法建立房地产数据生态圈，为地产、金融、地税、评估行业等多项纵深服务领域提供数据及系统集成服务，致力成为国内最大的房地产数据的平台级服务商。" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="baidu-site-verification" content="juThHDvk55" />
+	<link type="image/x-icon" mce_href="content/lib/images/yunfang.ico" href="content/lib/images/yunfang.ico" rel="icon">
+	<link rel="stylesheet" type="text/css" href="content/third/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="content/lib/css/main.css">
+	<title>基础数据</title>
+	<script type="text/javascript" data-main="content/main" src="./content/third/require/require.js"></script>
+</head>
+
+<body>
+	<!-- header -->
+	<header class="clearfix fixed opacity7"></header>
+
+	<div class="location-content fixed transparency">
+		<div class="container">
+			<div class="crumbs">
+				<b class="icon location"></b>
+				<span>您的位置：</span>
+				<span><a href="/">首页</a> ></span>
+				<span><a href="dataSupply.html">数据提供</a> ></span>
+				<span>基础数据</span>
+			</div>
+			<!-- <ul class="list-unstyled subnav">
+            <li><a href="javascript:;">接口分类</a></li>
+            <li><a href="javascript:;">案例示意</a></li>
+            <li><a href="javascript:;">合作伙伴</a></li>
+        </ul> -->
+		</div>
+	</div>
+
+	<!-- banner -->
+	<section class="secondpage-banner transition_05" style="background: url(content/lib/images/service/datasupplyheader1.jpg) no-repeat center 0">
+    	<!-- <div class="container">
+    		<p class="dataSupply-title">云房数据库</p>
+    		<p class="dataSupply-sub-title">公司整合土地、新房、二手房、租房等市场交易数据及与房<br>
+    		产相关的城市数据、人群数据等，在风控、营销、市场研<br>
+    		究、投资决策等环节为客户提供数据服务。</p>
+    	</div>	 -->
+    </section>
+	<section class="secondpage-content bgwhite">
+		<div class="container dataapi">
+			<div class="datatab">
+				<div class="tab-content">
+					<ul class="list-unstyled tab-hd clearfix baseTabHd" id="dataTabHd" data-state="{{stateObject.saveState}}">
+						<li>房产类</li>
+						<li>城市类</li>
+					</ul>
+				</div>
+				<div class="tab-bd clearfix" id="dataTabBd">
+					<div class="panel">
+						<div class="dataapi-section-title">
+							<b class="line"></b>
+							<i class="square"></i>
+							<span> 数据介绍 </span>
+							<i class="square"></i>
+							<b class="line"></b>
+						</div>
+						<table id="tb_datapresentation" class="wrap_1 text-center">
+							<tbody>
+
+								<tr>
+									<td class="width-pix-13 blue">
+										数据名称
+									</td>
+									<td class="width-pix-9 blue">
+										成果形式
+									</td>
+									<td class="width-pix-9 blue">
+										更新频率
+									</td>
+									<td class="width-pix-9 blue">
+										空间范围
+									</td>
+									<td class="width-pix-60 blue">
+										字段信息
+									</td>
+								</tr>
+								<tr>
+									<td class="blue">
+										小区基础数据
+									</td>
+									<td class="">
+										Excel\API
+									</td>
+									<td class="">
+										月度
+									</td>
+									<td class="">
+										小区级
+									</td>
+									<td class="">
+										行政区、小区名称、小区别名、地址、地址别名、小区类型、开发商、土地权属性质、土地取得方式、土地用途、土地使用年限、土地等级、土地面积、开盘时间、楼幢总数、最高楼层、总户数、容积率、建筑面积、建筑类别、楼层状况、消亡时点、物业安防管理、物业管理费、环域位置、得房率、绿化率、物业管理公司、位置状况、车位状况、基础设施、环境状况、治安状况、临街状况、楼盘图片……
+									</td>
+								</tr>
+								<tr>
+									<td class="blue">
+										户数据
+									</td>
+									<td class="">
+										Excel\API
+									</td>
+									<td class="">
+										月度
+									</td>
+									<td class="">
+										户级
+									</td>
+									<td class="">
+										项目名称、房间号、面积、朝向、层数、装修情况……
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<div class="dataapi-section-title">
+							<b class="line"></b>
+							<i class="square"></i>
+							<span> 案例展示 </span>
+							<i class="square"></i>
+							<b class="line"></b>
+						</div>
+						<table id="tb_base" class="wrap_1 text-right">
+							<tbody>
+
+								<tr>
+									<td class="width-max">
+										行政区全名 <input id="TID" name="TID" type="hidden" value="16630" style="display: none;">
+										<input id="MapType" name="MapType" type="hidden" value="百度地图" style="display: none;">
+									</td>
+									<td class="text-left width-pix-sm">
+										<label>西城区</label>
+										<input class="width-pix-sm" districttree="true" emptymsg="请输入行政区全名" id="DistrictFullName" isempty="false" max="120" name="DistrictFullName" readonly="readonly" type="text" validator="true" value="西城区" style="display: none;"> &nbsp;&nbsp;
+										<a id="clearA" onclick=" javascript:$('#DistrictFullName').val(''); " href="javascript:void(0);" style="display: none;">清空</a>
+										<br>
+										<div id="DistrictFullNameTip"></div>
+									</td>
+									<td class="width-max">
+										小区名称
+									</td>
+									<td class="text-left width-pix-sm">
+										<label id="TextResidentialAreaName">荣丰2008</label>
+										<input class="width-pix-sm" emptymsg="请输入小区名称" id="ResidentialAreaName" isempty="false" max="50" maxlength="50" min="1" name="ResidentialAreaName" rangemsg="输入小区名称请在50位字符以内" type="text" validator="true" value="荣丰2008" style="display: none;">
+										<br>
+										<div id="ResidentialAreaNameTip"></div>
+									</td>
+								</tr>
+								<tr>
+									<td class="width-max">
+										小区别名
+									</td>
+									<td class="text-left" colspan="3">
+										<span id="ShowResidentialAreaAlias">,荣丰2008一期荣丰嘉园,荣丰2008二期非常男女,荣丰2008三期非常空间,荣丰嘉园(一期),荣丰嘉园三期,荣丰2008之非常空间,广安门外大街305号,广安外大街305号八区,荣丰三期,广外大街305号八区,广安门外大街305号八区,广安门外大街305号8区,荣丰2008,荣丰嘉园,荣丰2008非常男女,荣丰2008小区,荣丰2008非常空间,非常空间,</span>
+
+										<a style="margin-left: 20px; display: none;" id="updateResidentialAreaAliasBtn" href="javascript:void(0);">修改</a>
+
+									</td>
+								</tr>
+								<tr>
+									<td class="width-max">
+										地址
+									</td>
+									<td class="text-left" colspan="3">
+										<label id="TextAddress">广安门外大街305号八区</label>
+										<input class="width-pix-max" emptymsg="请输入小区地址" id="Address" isempty="false" max="120" maxlength="120" name="Address" type="text" validator="true" value="广安门外大街305号八区" style="display: none;">
+										<br>
+										<div id="AddressTip"></div>
+									</td>
+								</tr>
+								<tr>
+									<td class="width-max">
+										地址别名
+									</td>
+									<td class="text-left" colspan="3">
+										<span id="ShowAddressAlias">,广安外大街305号八区,广安门外大街305号八区,广安门外大街305号8区,</span>
+
+										<a style="margin-left: 20px; display: none;" id="updateAddressAliasBtn" href="javascript:void(0);">修改</a>
+
+									</td>
+								</tr>
+
+								<tr>
+									<td class="width-max">
+										小区类型
+									</td>
+									<td class="text-left">
+										<label>小区</label>
+										<select id="ResidentialAreaType" isempty="true" name="ResidentialAreaType" validator="true" style="display: none;">
+											<option selected="selected"> </option>
+											<option selected="selected" value="小区">小区</option>
+											<option value="散楼">散楼</option>
+										</select>
+									</td>
+									<td class="width-max">
+										开发商
+									</td>
+									<td class="text-left">
+										<label>北京荣丰房地产开发有限公司</label>
+										<input class="width-pix-sm" id="DeveloperCompany" isempty="true" max="120" maxlength="120" name="DeveloperCompany" type="text" validator="true" value="北京荣丰房地产开发有限公司" style="display: none;">
+										<br>
+										<div id="DeveloperCompanyTip"></div>
+									</td>
+								</tr>
+								<tr>
+									<td class="width-max">
+										楼幢总数
+									</td>
+									<td class="text-left">
+										<label>19.00</label>
+										<input class="width-pix-lt" id="HouseBuildingCount" isempty="true" max="10" maxlength="10" name="HouseBuildingCount" regex="/^[0-9]\d*$/" regexmsg="请输入正确的楼幢总数" type="text" validator="true" value="19" style="display: none;">
+										<a id="StatisticsHouseBuildingCount" onclick=" StatisticsInformation('HouseBuildingCount'); " href="javascript:void(0);" style="display: none;">统计</a>
+										<br>
+										<div id="HouseBuildingCountTip"></div>
+									</td>
+									<td class="width-max">
+										土地取得方式
+									</td>
+									<td class="text-left">
+										<label>出让</label>
+										<select id="WayObtainLand" isempty="true" name="WayObtainLand" validator="true" style="display: none;">
+											<option selected="selected"> </option>
+											<option value="划拨">划拨</option>
+											<option selected="selected" value="出让">出让</option>
+											<option value="转让">转让</option>
+											<option value="其他">其他</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td class="width-max">
+										土地用途
+									</td>
+									<td class="text-left">
+										<label>住宅用地</label>
+									</td>
+									<td class="width-max">
+										土地使用年限
+									</td>
+									<td class="text-left">
+										<label>70</label>
+										<input class="width-pix-sm" id="LandUseYearsLimit" isempty="true" max="10" maxlength="10" name="LandUseYearsLimit" regex="/^[0-9]\d*$/" regexmsg="请输入正确的土地使用年限" type="text" validator="true" value="70" style="display: none;">
+										<br>
+										<div id="LandUseYearsLimitTip"></div>
+									</td>
+								</tr>
+								<tr>
+									<td class="width-max">
+										土地等级
+									</td>
+									<td class="text-left">
+										<label>非精品</label>
+										<select id="LandGrade" isempty="true" name="LandGrade" validator="true" style="display: none;">
+											<option> </option>
+										</select>
+									</td>
+									<td class="width-max">
+										土地面积(㎡)
+									</td>
+									<td class="text-left">
+										<label>3.86</label>
+										<input class="width-pix-sm" id="LandArea" isempty="true" max="15" maxlength="15" name="LandArea" regex="/(^[0-9]+\.[0-9]*[1-9][0-9]*$)|(^[0-9]*[1-9][0-9]*\.[0-9]+$)|(^[0-9]*[1-9][0-9]*$)|(^0\.?[0]*$)/" regexmsg="请输入正确的土地面积" type="text" validator="true" value="3.86000" style="display: none;">
+										<br>
+										<div id="LandAreaTip"></div>
+									</td>
+								</tr>
+								<tr>
+									<td class="width-max">
+										最高楼层
+									</td>
+									<td class="text-left">
+										<label>20</label>
+										<input class="width-pix-sm" id="MaxFloors" isempty="true" max="10" maxlength="10" name="MaxFloors" regex="/^[0-9]\d*$/" regexmsg="请输入正确的最高楼层" type="text" validator="true" value="20" style="display: none;">
+										<br>
+										<div id="MaxFloorsTip"></div>
+									</td>
+									<td class="width-max">
+										总户数
+									</td>
+									<td class="text-left">
+										<label>5977</label>
+										<input class="width-pix-lt" id="HousingCount" isempty="true" max="10" maxlength="10" name="HousingCount" regex="/^[0-9]\d*$/" regexmsg="请输入正确的总户数" type="text" validator="true" value="5977" style="display: none;">
+										<a id="StatisticsHousingCount" onclick=" StatisticsInformation('HousingCount'); " value="统计" href="javascript:void(0);" style="display: none;">统计</a>
+										<br>
+										<div id="HousingCountTip"></div>
+									</td>
+								</tr>
+								<tr>
+									<td class="width-max">
+										容积率
+									</td>
+									<td class="text-left">
+										<label for="FloorAreaRatio">3.20</label>
+										<input class="width-pix-sm" id="FloorAreaRatio" isempty="true" max="15" maxlength="15" name="FloorAreaRatio" regex="/(^[0-9]+\.[0-9]*[1-9][0-9]*$)|(^[0-9]*[1-9][0-9]*\.[0-9]+$)|(^[0-9]*[1-9][0-9]*$)|(^0\.?[0]*$)/" regexmsg="请输入正确的容积率" type="text" validator="true" value="3.2" style="display: none;">
+										<br>
+										<div id="FloorAreaRatioTip"></div>
+									</td>
+									<td class="width-max">
+										建筑面积(㎡)
+									</td>
+									<td class="text-left">
+										<label for="BuildingArea">345600.00</label>
+										<input class="width-pix-sm" id="BuildingArea" isempty="true" max="15" maxlength="15" name="BuildingArea" regex="/(^[0-9]+\.[0-9]*[1-9][0-9]*$)|(^[0-9]*[1-9][0-9]*\.[0-9]+$)|(^[0-9]*[1-9][0-9]*$)|(^0\.?[0]*$)/" regexmsg="请输入正确的建筑面积" type="text" validator="true" value="345600.00000" style="display: none;">
+										<br>
+										<div id="BuildingAreaTip"></div>
+									</td>
+								</tr>
+								<tr>
+									<td class="width-max">
+										建筑类别
+									</td>
+									<td class="text-left">
+										<label>塔楼</label>
+										<select id="BuildingCategory" isempty="true" name="BuildingCategory" validator="true" style="display: none;">
+											<option selected="selected"> </option>
+											<option value="板楼">板楼</option>
+											<option selected="selected" value="塔楼">塔楼</option>
+											<option value="板塔结合">板塔结合</option>
+											<option value="未知">未知</option>
+											<option value="独栋">独栋</option>
+											<option value="联排">联排</option>
+											<option value="叠拼">叠拼</option>
+											<option value="双拼">双拼</option>
+											<option value="平房">平房</option>
+										</select>
+
+									</td>
+									<td class="width-max">
+										楼层状况
+									</td>
+									<td class="text-left">
+										<label>10层、16层、20层、26层等</label>
+										<input class="width-pix-sm" id="BuildingInfo" isempty="true" name="BuildingInfo" type="text" validator="true" value="10层、16层、20层、26层等" style="display: none;">
+										<br>
+										<div id="BuildingInfoTip"></div>
+									</td>
+								</tr>
+								<tr style="display: none;">
+									<td class="width-max">
+										小区X坐标
+									</td>
+									<td class="text-left">
+										<label>116.342745000000000</label>
+										<input class="width-pix-sm" id="XLongitude" isempty="true" maxlength="20" name="XLongitude" regex="/(^-?[0-9]+\.[0-9]*[1-9][0-9]*$)|(^-?[0-9]*[1-9][0-9]*\.[0-9]+$)|(^-?[0-9]*[1-9][0-9]*$)|(^0\.?[0]*$)/" regexmsg="百度X坐标格式不正确" type="text" validator="true" value="116.342745000000000" style="display: none;">
+										<br>
+										<div id="XLongitudeTip"></div>
+									</td>
+									<td class="width-max">
+										小区Y坐标
+									</td>
+									<td class="text-left">
+										<label>39.899712000000000</label>
+										<input class="width-pix-sm" id="YLatitude" isempty="true" maxlength="20" name="YLatitude" regex="/(^-?[0-9]+\.[0-9]*[1-9][0-9]*$)|(^-?[0-9]*[1-9][0-9]*\.[0-9]+$)|(^-?[0-9]*[1-9][0-9]*$)|(^0\.?[0]*$)/" regexmsg="百度Y坐标格式不正确" type="text" validator="true" value="39.899712000000000" style="display: none;">
+										<br>
+										<div id="YLatitudeTip"></div>
+										<input id="XYCoordinateArray" name="XYCoordinateArray" type="hidden" value="" style="display: none;">
+									</td>
+								</tr>
+
+								<tr map="true">
+									<td id="baiduoutTd" colspan="4" style="padding: 15px;">
+										<div id="baiduPoint" style="height: 450px; width: 100%; overflow: hidden; position: relative; z-index: 0; color: rgb(0, 0, 0); text-align: left; background-color: rgb(243, 241, 236);">
+											<div style="overflow: visible; position: absolute; z-index: 0; left: 0px; top: 0px; cursor: url(&quot;http://api0.map.bdimg.com/images/openhand.cur&quot;) 8 8, default;">
+												<div class="BMap_mask" style="position: absolute; left: 0px; top: 0px; z-index: 9; overflow: hidden; -webkit-user-select: none; width: 1092px; height: 450px;"></div>
+												<div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;">
+													<div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 800;"></div>
+													<div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 700;"><span class="BMap_Marker BMap_noprint" unselectable="on" "=" " style="position: absolute; padding: 0px; margin: 0px; border: 0px; cursor: pointer; width: 19px; height: 25px; left: 536px; top: 200px; z-index: -7979942; background: url(&quot;http://api0.map.bdimg.com/images/blank.gif&quot;); " title=" "></span><span class="BMap_Marker BMap_noprint " unselectable="on " "="" style="position: absolute; padding: 0px; margin: 0px; border: 0px; cursor: pointer; width: 18px; height: 18px; left: 168px; top: 78px; z-index: 19000000; -webkit-user-select: none; display: none; background: url(&quot;http://api0.map.bdimg.com/images/blank.gif&quot;);" title=""></span>
+													</div>
+													<div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 600;"></div>
+													<div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 500;"><label class="BMapLabel" unselectable="on" style="position: absolute; display: none; cursor: inherit; border: 1px solid rgb(190, 190, 190); padding: 1px; white-space: nowrap; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: arial, sans-serif; z-index: -20000; color: rgb(190, 190, 190); background-color: rgb(190, 190, 190);">shadow</label><label class="BMapLabel" unselectable="on" style="position: absolute; cursor: inherit; border: 1px solid rgb(140, 140, 140); padding: 1px; white-space: nowrap; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 12px; line-height: normal; font-family: arial, sans-serif; z-index: -7981192; -webkit-user-select: none; color: rgb(77, 77, 77); left: 133px; top: 112px; display: none; background-color: rgb(255, 255, 225);">点击可查看详情</label></div>
+													<div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 400;"><span class="BMap_Marker" unselectable="on" style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 0px; height: 0px; left: 536px; top: 200px; z-index: -7979942;"><div style="position: absolute; margin: 0px; padding: 0px; width: 19px; height: 25px; overflow: hidden;"><img src="http://api0.map.bdimg.com/images/marker_red_sprite.png" style="display: block; border:none;margin-left:0px; margin-top:0px; "></div></span><span class="BMap_Marker" unselectable="on" style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 0px; height: 0px; left: 168px; top: 78px; z-index: 19000000; display: none;"><div style="position: absolute; margin: 0px; padding: 0px; width: 18px; height: 18px; overflow: hidden;"><img src="http://api0.map.bdimg.com/images/spotmkrs.png" style="display: block; border:none;margin-left:-196px; margin-top:-244px; "></div></span></div>
+													<div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 300;"><span unselectable="on" style="position: absolute; padding: 0px; margin: 0px; border: 0px; width: 20px; height: 11px; left: 540px; top: 214px;"><div style="position: absolute; margin: 0px; padding: 0px; width: 20px; height: 11px; overflow: hidden;"><img src="http://api0.map.bdimg.com/images/marker_red_sprite.png" style="display: block; border:none;margin-left:-19px; margin-top:-13px; "></div></span></div>
+													<div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 201;"></div>
+													<div style="position: absolute; height: 0px; width: 0px; left: 0px; top: 0px; z-index: 200;"></div>
+												</div>
+												<div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 1;">
+													<div style="position: absolute; overflow: visible; z-index: -100; left: 546px; top: 225px; display: block; transform: translate3d(0px, 0px, 0px);"><img src="http://online2.map.bdimg.com/tile/?qt=tile&amp;x=6326&amp;y=2356&amp;z=15&amp;styles=pl&amp;scaler=1&amp;udt=20170607" style="position: absolute; border: none; width: 256px; height: 256px; left: 537px; top: -427px; max-width: none; opacity: 1;"><img src="http://online1.map.bdimg.com/tile/?qt=tile&amp;x=6325&amp;y=2356&amp;z=15&amp;styles=pl&amp;scaler=1&amp;udt=20170607" style="position: absolute; border: none; width: 256px; height: 256px; left: 281px; top: -427px; max-width: none; opacity: 1;"><img src="http://online1.map.bdimg.com/tile/?qt=tile&amp;x=6326&amp;y=2355&amp;z=15&amp;styles=pl&amp;scaler=1&amp;udt=20170607" style="position: absolute; border: none; width: 256px; height: 256px; left: 537px; top: -171px; max-width: none; opacity: 1;"><img src="http://online0.map.bdimg.com/tile/?qt=tile&amp;x=6324&amp;y=2356&amp;z=15&amp;styles=pl&amp;scaler=1&amp;udt=20170607" style="position: absolute; border: none; width: 256px; height: 256px; left: 25px; top: -427px; max-width: none; opacity: 1;"><img src="http://online0.map.bdimg.com/tile/?qt=tile&amp;x=6325&amp;y=2355&amp;z=15&amp;styles=pl&amp;scaler=1&amp;udt=20170607" style="position: absolute; border: none; width: 256px; height: 256px; left: 281px; top: -171px; max-width: none; opacity: 1;"><img src="http://online4.map.bdimg.com/tile/?qt=tile&amp;x=6324&amp;y=2355&amp;z=15&amp;styles=pl&amp;scaler=1&amp;udt=20170607" style="position: absolute; border: none; width: 256px; height: 256px; left: 25px; top: -171px; max-width: none; opacity: 1;"><img src="http://online3.map.bdimg.com/tile/?qt=tile&amp;x=6323&amp;y=2355&amp;z=15&amp;styles=pl&amp;scaler=1&amp;udt=20170607" style="position: absolute; border: none; width: 256px; height: 256px; left: -231px; top: -171px; max-width: none; opacity: 1;"><img src="http://online2.map.bdimg.com/tile/?qt=tile&amp;x=6322&amp;y=2355&amp;z=15&amp;styles=pl&amp;scaler=1&amp;udt=20170607" style="position: absolute; border: none; width: 256px; height: 256px; left: -487px; top: -171px; max-width: none; opacity: 1;"><img src="http://online4.map.bdimg.com/tile/?qt=tile&amp;x=6323&amp;y=2356&amp;z=15&amp;styles=pl&amp;scaler=1&amp;udt=20170607" style="position: absolute; border: none; width: 256px; height: 256px; left: -231px; top: -427px; max-width: none; opacity: 1;"><img src="http://online1.map.bdimg.com/tile/?qt=tile&amp;x=6321&amp;y=2355&amp;z=15&amp;styles=pl&amp;scaler=1&amp;udt=20170607" style="position: absolute; border: none; width: 256px; height: 256px; left: -743px; top: -171px; max-width: none; opacity: 1;"><img src="http://online3.map.bdimg.com/tile/?qt=tile&amp;x=6322&amp;y=2356&amp;z=15&amp;styles=pl&amp;scaler=1&amp;udt=20170607" style="position: absolute; border: none; width: 256px; height: 256px; left: -487px; top: -427px; max-width: none; opacity: 1;"><img src="http://online2.map.bdimg.com/tile/?qt=tile&amp;x=6323&amp;y=2354&amp;z=15&amp;styles=pl&amp;scaler=1&amp;udt=20170607" style="position: absolute; border: none; width: 256px; height: 256px; left: -231px; top: 85px; max-width: none; opacity: 1;"><img src="http://online3.map.bdimg.com/tile/?qt=tile&amp;x=6324&amp;y=2354&amp;z=15&amp;styles=pl&amp;scaler=1&amp;udt=20170607" style="position: absolute; border: none; width: 256px; height: 256px; left: 25px; top: 85px; max-width: none; opacity: 1;"><img src="http://online2.map.bdimg.com/tile/?qt=tile&amp;x=6321&amp;y=2356&amp;z=15&amp;styles=pl&amp;scaler=1&amp;udt=20170607" style="position: absolute; border: none; width: 256px; height: 256px; left: -743px; top: -427px; max-width: none; opacity: 1;"><img src="http://online0.map.bdimg.com/tile/?qt=tile&amp;x=6321&amp;y=2354&amp;z=15&amp;styles=pl&amp;scaler=1&amp;udt=20170607" style="position: absolute; border: none; width: 256px; height: 256px; left: -743px; top: 85px; max-width: none; opacity: 1;"><img src="http://online0.map.bdimg.com/tile/?qt=tile&amp;x=6326&amp;y=2354&amp;z=15&amp;styles=pl&amp;scaler=1&amp;udt=20170607" style="position: absolute; border: none; width: 256px; height: 256px; left: 537px; top: 85px; max-width: none; opacity: 1;"><img src="http://online4.map.bdimg.com/tile/?qt=tile&amp;x=6325&amp;y=2354&amp;z=15&amp;styles=pl&amp;scaler=1&amp;udt=20170607" style="position: absolute; border: none; width: 256px; height: 256px; left: 281px; top: 85px; max-width: none; opacity: 1;"><img src="http://online1.map.bdimg.com/tile/?qt=tile&amp;x=6322&amp;y=2354&amp;z=15&amp;styles=pl&amp;scaler=1&amp;udt=20170607" style="position: absolute; border: none; width: 256px; height: 256px; left: -487px; top: 85px; max-width: none; opacity: 1;"></div>
+												</div>
+												<div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 2; display: none;">
+													<div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 0; display: none;"></div>
+													<div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 10; display: none;"></div>
+												</div>
+												<div style="position: absolute; overflow: visible; top: 0px; left: 0px; z-index: 3;"></div>
+											</div>
+											<div class="pano_close" title="退出全景" style="z-index: 1201; display: none;"></div>
+											<a class="pano_pc_indoor_exit" title="退出室内景" style="z-index: 1201; display: none;"><span style="float:right;margin-right:12px;">出口</span></a>
+											<div class="BMapLib_Drawing BMap_noprint anchorTR" style="transform: scale(0.8); margin-left: -39px; margin-top: -5px; position: absolute; z-index: 10; bottom: auto; right: 5px; top: 5px; left: auto; display: none;">
+												<div class="BMapLib_Drawing_panel">
+													<a class="BMapLib_box BMapLib_hander" drawingtype="hander" href="javascript:void(0)" title="拖动地图" onfocus="this.blur()"></a>
+													<a class="BMapLib_box BMapLib_marker" drawingtype="marker" href="javascript:void(0)" title="画点" onfocus="this.blur()"></a>
+													<a class="BMapLib_box BMapLib_polygon BMapLib_last" drawingtype="polygon" href="javascript:void(0)" title="画多边形" onfocus="this.blur()"></a>
+												</div>
+											</div>
+											<div class="map_reset" style="right: 10px; display: none;">重置</div>
+											<div tag="msg" style="cursor: pointer; border: 1px solid gray; padding: 5px; position: absolute; bottom: 0px; right: 0px; z-index: 10; font-size: 11px; height: 135px; width: 155px; overflow: scroll; display: none; background-color: white;">点坐标<br>[116.342745,39.899712]<br><br></div>
+											<div class=" anchorBL" style="height: 32px; position: absolute; z-index: 30; bottom: 20px; right: auto; top: auto; left: 1px;">
+												<a title="到百度地图查看此区域" target="_blank" href="http://map.baidu.com/?sr=1" style="outline: none;"><img style="border:none;width:77px;height:32px" src="http://api0.map.bdimg.com/images/copyright_logo.png"></a>
+											</div>
+											<div id="zoomer" style="position:absolute;z-index:0;top:0px;left:0px;overflow:hidden;visibility:hidden;cursor:url(http://api0.map.bdimg.com/images/openhand.cur) 8 8,default">
+												<div class="BMap_zoomer" style="top:0;left:0;"></div>
+												<div class="BMap_zoomer" style="top:0;right:0;"></div>
+												<div class="BMap_zoomer" style="bottom:0;left:0;"></div>
+												<div class="BMap_zoomer" style="bottom:0;right:0;"></div>
+											</div>
+											<div unselectable="on" class=" BMap_stdMpCtrl BMap_stdMpType0 BMap_noprint anchorTL" style="width: 62px; height: 192px; bottom: auto; right: auto; top: 10px; left: 10px; position: absolute; z-index: 1100;">
+												<div class="BMap_stdMpPan">
+													<div class="BMap_button BMap_panN" title="向上平移"></div>
+													<div class="BMap_button BMap_panW" title="向左平移"></div>
+													<div class="BMap_button BMap_panE" title="向右平移"></div>
+													<div class="BMap_button BMap_panS" title="向下平移"></div>
+													<div class="BMap_stdMpPanBg BMap_smcbg"></div>
+												</div>
+												<div class="BMap_stdMpZoom" style="height: 147px; width: 62px;">
+													<div class="BMap_button BMap_stdMpZoomIn" title="放大一级">
+														<div class="BMap_smcbg"></div>
+													</div>
+													<div class="BMap_button BMap_stdMpZoomOut" title="缩小一级" style="top: 126px;">
+														<div class="BMap_smcbg"></div>
+													</div>
+													<div class="BMap_stdMpSlider" style="height: 108px;">
+														<div class="BMap_stdMpSliderBgTop" style="height: 108px;">
+															<div class="BMap_smcbg"></div>
+														</div>
+														<div class="BMap_stdMpSliderBgBot" style="top: 25px; height: 87px;"></div>
+														<div class="BMap_stdMpSliderMask" title="放置到此级别"></div>
+														<div class="BMap_stdMpSliderBar" title="拖动缩放" style="cursor: url(&quot;http://api0.map.bdimg.com/images/openhand.cur&quot;) 8 8, default; top: 25px;">
+															<div class="BMap_smcbg"></div>
+														</div>
+													</div>
+													<div class="BMap_zlHolder">
+														<div class="BMap_zlSt">
+															<div class="BMap_smcbg"></div>
+														</div>
+														<div class="BMap_zlCity">
+															<div class="BMap_smcbg"></div>
+														</div>
+														<div class="BMap_zlProv">
+															<div class="BMap_smcbg"></div>
+														</div>
+														<div class="BMap_zlCountry">
+															<div class="BMap_smcbg"></div>
+														</div>
+													</div>
+												</div>
+												<div class="BMap_stdMpGeolocation" style="position: initial; display: none; margin-top: 43px; margin-left: 10px;">
+													<div class="BMap_geolocationContainer" style="position: initial; width: 24px; height: 24px; overflow: hidden; margin: 0px; box-sizing: border-box;">
+														<div class="BMap_geolocationIconBackground" style="width: 24px; height: 24px; background-image: url(http://api0.map.bdimg.com/images/navigation-control/geolocation-control/pc/bg-20x20.png); background-size: 20px 20px; background-position: 3px 3px; background-repeat: no-repeat;">
+															<div class="BMap_geolocationIcon" style="position: initial; width: 24px; height: 24px; cursor: pointer; background-image: url('http://api0.map.bdimg.com/images/navigation-control/geolocation-control/pc/success-10x10.png'); background-size: 10px 10px; background-repeat: no-repeat; background-position: center;"></div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div unselectable="on" class=" BMap_scaleCtrl BMap_noprint anchorBL" style="bottom: 18px; right: auto; top: auto; left: 81px; width: 88px; position: absolute; z-index: 10;">
+												<div class="BMap_scaleTxt" unselectable="on" style="color: black; background-color: transparent;">500&nbsp;米</div>
+											</div>
+											<div unselectable="on" class=" BMap_cpyCtrl BMap_noprint anchorBL" style="cursor: default; white-space: nowrap; color: black; font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 11px; line-height: 15px; font-family: arial, sans-serif; bottom: 2px; right: auto; top: auto; left: 2px; position: absolute; z-index: 10; background: none;"><span _cid="1" style="display: inline;"><span style="background: rgba(255, 255, 255, 0.701961);padding: 0px 1px;line-height: 16px;display: inline;height: 16px;">©&nbsp;2017 Baidu - GS(2016)2089号&nbsp;- Data © 长地万方</span></span>
+											</div>
+										</div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<table id="tb_detail" class="wrap_1 text-right tbf">
+							<tbody>
+								<tr>
+									<td class="width-max">
+										<input id="TID" name="TID" type="hidden" value="16615" style="display: none;">
+										<input id="ResidentialAreaID" name="ResidentialAreaID" type="hidden" value="16630" style="display: none;"> 物业安防管理
+									</td>
+									<td class="text-left">
+										<label>可视对讲进门系统，闭路电视监控。</label>
+										<input class="datepicker width-pix-sm" id="DescriptionDate" isempty="true" name="DescriptionDate" readonly="readonly" type="text" validator="true" value="" style="display: none;">
+									</td>
+									<td class="width-max">
+										物业管理费<br> 每平方米/元/月
+									</td>
+									<td class="text-left">
+										<label> 3.5</label>
+										<input class="datepicker width-pix-sm" id="DespEndDate" isempty="true" name="DespEndDate" readonly="readonly" type="text" validator="true" value="" style="display: none;">
+										<br>
+										<div id="DespEndDateTip"></div>
+									</td>
+								</tr>
+								
+								<tr>
+									<td>
+										环域位置
+									</td>
+									<td class="text-left" colspan="3">
+										<label>二环至三环</label>
+										<input class="width-pix-max" id="RingRoad" isempty="true" max="120" maxlength="120" name="RingRoad" type="text" validator="true" value="二环至三环" style="display: none;">
+										<div id="RingRoadTip"></div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										绿化率
+									</td>
+									<td class="text-left">
+										<label>36%</label>
+										<input class="width-pix-sm" id="GreeningRate" isempty="true" max="10" maxlength="10" name="GreeningRate" regex="/(^[0-9]+\.[0-9]*[1-9][0-9]*$)|(^[0-9]*[1-9][0-9]*\.[0-9]+$)|(^[0-9]*[1-9][0-9]*$)|(^0\.?[0]*$)/" regexmsg="请输入正确的绿化率" type="text" validator="true" value="0.36" style="display: none;">
+										<div id="GreeningRateTip"></div>
+									</td>
+									<td>
+										得房率
+									</td>
+									<td class="text-left">
+										<label>3.2%</label>
+										<input class="width-pix-sm" id="RoomRate" isempty="true" max="20" maxlength="20" name="RoomRate" regex="/(^[0-9]+\.[0-9]*[1-9][0-9]*$)|(^[0-9]*[1-9][0-9]*\.[0-9]+$)|(^[0-9]*[1-9][0-9]*$)|(^0\.?[0]*$)/" regexmsg="请输入正确的得房率" type="text" validator="true" value="3.2" style="display: none;">
+										<div id="RoomRateTip"></div>
+									</td>
+								</tr>
+								
+								<tr>
+									<td>
+										物业管理公司
+									</td>
+									<td class="text-left" colspan="3">
+										<label>华美仑物业公司</label>
+										<input class="width-pix-max" id="ManagementCompany" isempty="true" max="120" maxlength="120" name="ManagementCompany" type="text" validator="true" value="华美仑物业公司" style="display: none;">
+										<div id="ManagementCompanyTip"></div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										车位状况
+									</td>
+									<td class="text-left" colspan="3">
+										<label>地上车位月租金：150元/车位/月。地下车位月租金：450元/车位/月。</label>
+										<textarea class="width-pix-max" cols="20" id="ParkingSpaceInfo" isempty="true" name="ParkingSpaceInfo" rows="2" validator="true" style="display: none;">地上车位月租金：150元/车位/月。地下车位月租金：450元/车位/月。</textarea>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										基础设施
+									</td>
+									<td class="text-left" colspan="3">
+										<label>安保系统;供热系统;供水系统;空调新风;车库配置;其他;</label>
+										<textarea class="width-pix-max" cols="20" id="BaseFacility" isempty="true" name="BaseFacility" rows="2" validator="true" style="display: none;">安保系统;供热系统;供水系统;空调新风;车库配置;其他;</textarea>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										临街状况
+									</td>
+									<td class="text-left" colspan="3">
+										<label>主干道：莲花池东路 距离：</label>
+										<textarea class="width-pix-max" cols="20" id="StreetSituation" isempty="true" name="StreetSituation" rows="2" validator="true" style="display: none;">主干道：莲花池东路 距离：</textarea>
+									</td>
+								</tr>
+								<tr style="display: none">
+									<td>
+										周边配套
+									</td>
+									<td class="text-left" colspan="3">
+										<label><p>教育机构: 天宁寺幼儿园、三义里第一幼儿园、三义里第二幼儿园、北京第14中学、华夏女子中学、北京小学、天宁寺小学 </p><p>医疗机构: 广外医院、宣武医院、广安门医院、白云路医院 </p><p>商服机构: 家乐福超市、上海华联超市、物美超市、华普超市、天虹商场场、广亨超市 </p><p>金融机构: 中国工商银行、中国建设银行、中国银行、中国农业银行、华夏银行、北京银行 </p><p>公园:  </p><p>机场:  </p><p>火车站:  </p><p>长途汽车站: </p></label>
+										<textarea class="width-pix-max" cols="20" id="PeripheralSupporting" isempty="true" name="PeripheralSupporting" rows="2" validator="true" style="display: none;">&lt;教育机构&gt;天宁寺幼儿园、三义里第一幼儿园、三义里第二幼儿园、北京第14中学、华夏女子中学、北京小学、天宁寺小学 &lt;/教育机构&gt;&lt;医疗机构&gt;广外医院、宣武医院、广安门医院、白云路医院 &lt;/医疗机构&gt;&lt;商服机构&gt;家乐福超市、上海华联超市、物美超市、华普超市、天虹商场场、广亨超市 &lt;/商服机构&gt;&lt;金融机构&gt;中国工商银行、中国建设银行、中国银行、中国农业银行、华夏银行、北京银行 &lt;/金融机构&gt;&lt;公园&gt; &lt;/公园&gt;&lt;机场&gt; &lt;/机场&gt;&lt;火车站&gt; &lt;/火车站&gt;&lt;长途汽车站&gt;&lt;/长途汽车站&gt;</textarea>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										周边配套
+									</td>
+									<td class="text-left" colspan="3">
+										公交:109电车-广外甘石桥 ；109电车-湾子；109电车-达官营；122路-广外甘石桥；122路-湾子；122路-达官营；133路-湾子；133路-达官营；340路-湾子；340路-达官营；38电车-广外甘石桥；38电车-湾子；38电车-达官营；390路-湾子；390路-达官营；3路-小马厂；
+										3路-白云桥西；40路-小马厂；410路-广外甘石桥；410路-湾子；410路-达官营；42电车-广外甘石桥；42电车-达官营；45路-小马厂；45路-湾子；45路-达官营；46路-广外甘石桥；46路-湾子；46路-达官营；477路-广外甘石桥；477路-湾子；477路-达官营；47路-小马厂；
+										47路-小马厂(东行)；47路-白云桥西；53路-广外甘石桥；53路-湾子；53路-达官营；57路-湾子；57路-达官营；662路-小马厂；663路-小马厂；673路-小马厂；691路-湾子；691路-达官营；6路-广外甘石桥；6路-湾子；6路-达官营；741路-小马厂；76路-广外甘石桥；
+										76路-湾子；76路-达官营；80路-红莲中里东；80路-达官营；840路-小马厂；843路-小马厂；85路-广外甘石桥；85路-湾子；85路-达官营；9路-小马厂；9路-白云桥西；专27路-达官营；夜14路-小马厂；夜14路-白云桥西；夜22路-广外甘石桥；夜22路-湾子；夜22路-达官营；
+										夜23路-小马厂；夜23路-白云桥西；夜36路-小马厂；夜36路-白云桥西；夜5路-小马厂；夜5路-白云桥西；夜7路-广外甘石桥；夜7路-湾子；夜7路-达官营；夜8路-小马厂；公交:特14路-白云桥西;特19路-白云桥西;特7路-湾子;特7路-达官营;运通102线-小马厂;<br />医院：北京生生医院;
+										宣武区老年病医院(马连道中街);宣武广外医院;慈睦国研中医综合门诊部;河北医科大学教学医院;羊坊店医院；西城区白云路医院<br>商场:天虹商场(北京宣武店)<br>地铁:地铁7号线-湾子<br>学校:北京小学天宁寺分校；北京小学红山分校<br>肉菜市场:西城区天陶广安菜市场<br>
+										超市:北京华联超市；华欣超市(丽水莲花店)<br>银行:中国工商银行(广外大街分理处)；中国工商银行(朗琴园支行)；中国工商银行(白云路支行)；中国建设银行(达官营支行)；中国邮政储蓄银行(北京南区支行个人消费信贷中心)；中国邮政储蓄银行(小马厂邮政所)；中国邮政储蓄银行(广安门支行)；
+										中国邮政储蓄银行个人消费信贷中心(北京南区支行)；中国银行(分行家属委员会)；中国银行(北京西站支行)；中国银行(朗琴园支行)；:中国银行(莲花河支行)；:交通银行(离行式 华普超市荣丰店(试行)；:北京银行(广源支行)；北京银行(白云支行)；华夏银行(广外支行)；平安银行；
+										广东发展银行(西客站支行)；渤海银行北京分行西客站支行<br> </td>
+								</tr>
+
+								<tr style="display: none">
+									<td>
+										交通状况
+									</td>
+									<td class="text-left" colspan="3">
+										<label></label>
+										<textarea class="width-pix-max" cols="20" id="TrafficInfo" isempty="true" name="TrafficInfo" rows="2" validator="true" style="display: none;"></textarea>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										特征标签
+									</td>
+									<td class="text-left" colspan="3">
+										<label>宣武板块</label>
+										<textarea class="width-pix-max" cols="20" id="Tags" isempty="true" max="120" maxlength="120" name="Tags" rows="2" validator="true" style="display: none;">宣武板块</textarea>
+										<div id="SafetyCompanyTip"></div>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="panel">
+						<div class="dataapi-section-title">
+							<b class="line"></b>
+							<i class="square"></i>
+							<span> 数据介绍 </span>
+							<i class="square"></i>
+							<b class="line"></b>
+						</div>
+						<table id="tb_datapresentation2" class="wrap_1 text-center">
+							<tbody>
+
+								<tr>
+									<td class="width-pix-13 blue">
+										数据名称
+									</td>
+									<td class="width-pix-9 blue">
+										成果形式
+									</td>
+									<td class="width-pix-9 blue">
+										更新频率
+									</td>
+									<td class="width-pix-9 blue">
+										空间范围
+									</td>
+									<td class="width-pix-60 blue">
+										字段信息
+									</td>
+								</tr>
+								<tr>
+									<td class="blue">
+										宏观经济数据
+									</td>
+									<td class="">
+										Excel\API
+									</td>
+									<td class="">
+										年度
+									</td>
+									<td class="">
+										城市级
+									</td>
+									<td class="">
+										GDP、GDP增速、财政支出、常住人口总量、年均人口增长率、储蓄存款余额、第一产业、第二产业、第三产业、房地产（房地产开发投资情况、房地产施工、竣工面积、商品住宅施工、竣工面积、办公楼施工、竣工面积、商业营业用房施工、竣工面积）、社零总额、可支配收入……
+									</td>
+								</tr>
+								<tr>
+									<td class="blue">
+										城市配套数据
+									</td>
+									<td class="">
+										Excel\API
+									</td>
+									<td class="">
+										月度
+									</td>
+									<td class="">
+										城市级
+									</td>
+									<td class="">
+										片区 、火车站/机场、地铁/公交站点、景观、幼儿园/小学/中学/大学 、三甲医院/非三甲大型综合医院/社区医院、诊所 、综合性商场/便利店/专业市场/大型超市、垃圾场/火葬场 ……
+									</td>
+								</tr>
+								<tr>
+									<td class="blue">
+										产业数据
+									</td>
+									<td class="">
+										Excel\API
+									</td>
+									<td class="">
+									</td>
+									<td class="">
+										企业级
+									</td>
+									<td class="">
+										各区域板块内产业分布、企业数量、企业主营业务类型、企业资产价值、每年营业收入、每年利润、市盈率、人均产值……
+									</td>
+								</tr>
+								<tr>
+									<td class="blue">
+										人口数据
+									</td>
+									<td class="">
+										Excel\API
+									</td>
+									<td class="">
+										年度
+									</td>
+									<td class="">
+										城市级
+									</td>
+									<td class="">
+										城区常住人口 城市年末从业人员数、户籍登记结婚对数、少儿抚养比年均增长率、户籍人口出生率、人均可支配收入增长率、第三产业从业人口、人均储蓄余额 ……
+									</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="dataapi-section-title">
+							<b class="line"></b>
+							<i class="square"></i>
+							<span> 案例展示 </span>
+							<i class="square"></i>
+							<b class="line"></b>
+						</div>
+						<p>某区域内某网点人口消费分布热力图</p>
+						<div class="img"><img src="content/lib/images/datasupply/hotdata13.png" /></div>
+						<p>北京上海宏观经济数据</p>
+						<div class="img"><img src="content/lib/images/datasupply/hotdata14.png" /></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- 底部导航 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="quick-entry">
+      <ul class="footer-link-group list-unstyled">
+       <li><strong>首页</strong></li>
+       <li><a href="http://www.yunfangdata.com/sitemap.html" target="_self">网站地图</a></li>
+      </ul>
+      <ul class="footer-link-group list-unstyled">
+       <li><strong>数据</strong></li>
+       <li><a href="http://www.yunfangdata.com/dataMall.html" target="_self">数据服务</a></li>
+      </ul>
+      <ul class="footer-link-group list-unstyled">
+       <li><strong>行业</strong></li>
+       <li><a href="http://www.yunfangdata.com/jinrong.html" target="_self">金融</a></li>
+       <li><a href="http://www.yunfangdata.com/dishui.html" target="_self">地税</a></li>
+       <li><a href="http://www.yunfangdata.com/pinggu.html" target="_self">评估</a></li>
+       <li><a href="http://www.yunfangdata.com/dichan.html" target="_self">地产</a></li>
+      </ul>
+      <ul class="footer-link-group list-unstyled">
+       <li><strong>产品</strong></li>
+       <li><a href="http://www.yunfangdata.com/houseload.html" target="_self">房估估</a></li>
+       <li><a href="http://pg.yunfangdata.com" target="_blank">评E评</a></li>
+       <li><a href="http://www.yunfangdata.com/datacollection.html" target="_self">外采系统</a></li>
+       <li><a href="http://www.yunfangdata.com/piliangfugu.html" target="_self">批量评估</a></li>
+       <li><a href="http://zhizi.yunfangdata.com/#/login" target="_blank">智子数库</a></li>
+      </ul>
+      <ul class="footer-link-group list-unstyled">
+       <li><strong><a href="http://www.yunfangdata.com/news_001.html" target="_self">研究中心</a></strong></li>
+       <li><a href="http://www.yunfangdata.com/news_001.html" target="_self">市场报告</a></li>
+       <li><a href="http://www.yunfangdata.com/news_002.html" target="_self">精选专题</a></li>
+       <li><a href="http://www.yunfangdata.com/news_003.html" target="_self">房价指数</a></li>
+       <li><a href="http://www.yunfangdata.com/news_004.html" target="_self">云房观点</a></li>
+      </ul>
+      <ul class="footer-link-group list-unstyled">
+       <li><strong><a href="http://www.yunfangdata.com/aboutUs.html" target="_self">关于我们</a></strong></li>
+       <li><a href="http://www.yunfangdata.com/aboutUs.html#companyProfile" target="_self">公司简介</a></li>
+       <li><a href="http://www.yunfangdata.com/aboutUs.html#teamIntroduction" target="_self">团队介绍</a></li>
+       <li><a href="http://www.yunfangdata.com/aboutUs.html#development" target="_self">发展历程</a></li>
+       <li><a href="http://www.yunfangdata.com/aboutUs.html#contactUs" target="_self">联系我们</a></li>
+      </ul>
+      <div class="footer-weixin-code">
+       <div class="img-code">
+        <img src="content/lib/images/yunfangdata_weixin_code.png"/>
+        <p>云房资讯公众号</p>
+       </div>
+       <div class="img-code">
+        <img src="content/lib/images/fanggugu_weixin_code.png"/>
+        <p>房估估公众号</p>
+       </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>北京云房数据技术有限责任公司<br>网络经营许可证 京ICP备13050679号-2&copy;2015 房估估Fungugu.com 版权所有</p>
+    </div>
+    </div>
+  </footer>
+	<!-- 悬浮导航 -->
+	<section id="fixedContent"></section>
+
+	<script type="text/javascript" src="content/lib/js/subpage.js"></script>
+	<script type="text/javascript" src="content/lib/js/dataSupply.js"></script>
+</body>
+
+</html>

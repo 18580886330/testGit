@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="" />
+	<meta name="description" content="云房数据-中国房地产大数据商城为您提供土地、新房、二手房、租赁、楼盘字典、指数类等数据，同时定期发布市场分析、回报率等报告" />
+	<meta name="baidu-site-verification" content="juThHDvk55" />
+	<link type="image/x-icon" mce_href="content/lib/images/yunfang.ico" href="content/lib/images/yunfang.ico" rel="icon">
+	<link rel="stylesheet" type="text/css" href="content/third/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="content/lib/css/main.css">
+	<link rel="stylesheet" type="text/css" href="content/third/layer/skin/layer.css">
+	<title>【房地产大数据商城】-云房数据</title>
+	<script type="text/javascript" data-main="content/main" src="./content/third/require/require.js"></script>
+</head>
+<body class="data-mall">
+	<header class="clearfix fixed opacity7"></header>
+	<!-- banner -->
+    <section class="secondpage-banner transition_05 datamall-banner" id="dataMallBanner">
+        <ul class="slide-content list-unstyled">
+            <li class="item" style="background:url(content/lib/images/datamall/banner2.jpg) no-repeat center center">
+            </li>
+            <li class="item" style="background:url(content/lib/images/datamall/banner1.jpg) no-repeat center center">
+                <a href="http://www.yunfangdata.com/datamall_015_17260.html" target="_blank"  style="display: block; width:100%; height:349px;"></a>
+            </li>
+        </ul>
+         <div class="slide-active">
+            <div class="list">
+                <ul class="slide-ul unmargin list-unstyled">
+                    <li class="item active"></li>
+                    <li class="item"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+	<!-- location -->
+    <div class="location-content transparency">
+		<div class="container">
+			<div class="crumbs">
+    			<b class="icon location"></b>
+    			<span>您的位置：</span>
+                <span><a href="/">首页</a> ></span>
+    			<span>数据服务</span>
+            </div>
+		</div>
+	</div>
+	<section class="data-filter" id="data-filter">
+		<div class="data-filter-con">
+			<div class="data-tab clearfix">
+				<ul id="dataTabHd" class="tab-ul fl clearfix">
+					<li class="active">数据商城</li>
+					<li>数据API</li>
+				</ul>
+				<a class="demand" target="_blank" href="/customization.html">需求定制</a>
+			</div>
+			<div id="dataTabBd" class="data-tab-con">
+				<div class="dpanel">
+					<ul>
+						<li class="item clearfix" id="filterCate">
+							<em class="big">类别</em>
+							<div class="box">
+								<span class="black active">全部</span>
+								<span data-id="2">二手房数据</span>
+								<span data-id="3">新房数据</span>
+								<span data-id="4">土地数据</span>
+								<span data-id="5">租赁数据</span>
+								<span data-id="6">楼盘字典</span>
+								<span data-id="7">指数数据</span>
+								<span data-id="1">数据包</span>
+								<!-- <span class="buy-custom" data-id="定制">需求定制</span> -->
+							</div>
+						</li>
+						<li class="item clearfix" id="filterCity">
+							<em class="big">城市</em>
+							<div class="box">
+								<span class="black active">全部</span>
+								<div id="selectCity" class="city-parent">
+									<i id="filterCityName">请选择省/市</i>
+									<div id="cityFrame" class="select-city">
+										<div id="select-tit" class="select-tit">
+											<span class="active">省份</span><span>城市</span>
+										</div>
+										<div id="specificProvince" class="select-con active">
+											<div class="province">
+												<p>A-G</p>
+												<p id="provinceA"></p>
+											</div>
+											<div class="province">
+												<p>H-K</p>
+												<p id="provinceH"></p>
+											</div>
+											<div class="province">
+												<p>L-S</p>
+												<p id="provinceL"></p>
+											</div>
+											<div class="province">
+												<p>T-Z</p>
+												<p id="provinceT"></p>
+											</div>
+										</div>
+										<div id="specificCity" class="select-con">
+											<div class="province">
+												<p>A-G</p>
+												<p class="city-box" id="cityA"></p>
+											</div>
+											<div class="province">
+												<p>H-K</p>
+												<p class="city-box" id="cityH"></p>
+											</div>
+											<div class="province">
+												<p>L-S</p>
+												<p class="city-box" id="cityL"></p>
+											</div>
+											<div class="province">
+												<p>T-Z</p>
+												<p class="city-box" id="cityT"></p>
+											</div>
+											<div class="all-city clearfix" id="allCity"><span>全部</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="item clearfix" id="filterDate">
+							<em class="big">时间</em>
+							<div class="box">
+								<span class="black active">全部</span>
+								<span>2017</span>
+								<span>2016</span>
+								<span>2015</span>
+								<span>2014</span>
+								<span>2013</span>
+								<div id="selectDate" class="city-parent">
+									<i id="filterDateTime">自定义</i>
+									<div id="dateFrame" class="select-date">
+										<ul>
+											<li class="t-active">2017</li>
+											<li>2016</li>
+											<li>2015</li>
+											<li>2014</li>
+											<li>2013</li>
+											<li>2012</li>
+											<li>2011</li>
+											<li>2010</li>
+											<li>2009</li>
+											<li>2008</li>
+											<li>2007</li>
+											<li>2006</li>
+											<li>2005</li>
+											<li>2004</li>
+											<li>2003</li>
+											<li>2002</li>
+											<li>2001</li>
+											<li>2000</li>
+											<li>1999</li>
+											<li>1998</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="dpanel none">
+					<ul>
+						<li class="item clearfix" id="apiReqType">
+							<em class="big">类别</em>
+							<div class="box">
+								<span class="black active" data-val="">全部</span>
+								<span data-val="楼盘字典类接口">楼盘字典类接口</span>
+								<span data-val="小区信息类接口">小区信息类接口</span>
+								<span data-val="价格类接口">价格类接口</span>
+								<span data-val="案例类接口">案例类接口</span>
+								<span data-val="工具类接口">工具类接口</span>
+								<span data-val="指数指标类接口">指数指标类接口</span>
+								<!-- <span class="buy-custom">其他接口</span> -->
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<div class="data-hint container"><b class="iconfont icon-tishi"></b>指数数据：按月提供对应城市的新房和二手房房价指数、租金指数</div>
+	<section class="data-mall-list">
+		<div class="list-con" id="productList">
+			<div id="listPage" class="list-box">
+				<!-- <div class="list-box">
+					<div class="product" data-categoryname="数据包" data-provincename="北京" data-year="2017">
+						<div class="pro-title">2017北京二手房成交数据</div>
+						<div class="pro-img">
+							<b class="iconfont"></b>
+						</div>
+						<div class="count text-center">
+							<p><b class="iconfont"></b><span>1</span>人已购买</p>
+						</div>
+						<div class="btns text-center">
+							<a href="#" class="btn">查看详情</a>
+							<a href="javascript:;" class="btn">立即购买</a>
+						</div>
+					</div>
+				</div> -->
+			</div>
+			<div id="blackPage" class="blank-page">
+				<div class="blank-person"></div>
+				<div class="blank-word">
+					<ul>
+						<li class="buy-custom" id="demand">需求定制</li>
+						<li>没找到需要的数据？</li>
+					</ul>
+				</div>
+			</div>
+			<div id="dataMallPage" class="page-list datamall-page clearfix"></div>
+		</div>
+
+		<div class="list-con" id="apiProList">
+			<div id="apiListBox" class="list-box">
+				<!-- <div class="product" data-categoryname="数据包" data-provincename="北京" data-year="2017">
+					<div class="pro-title">北京中介成交监测</div>
+					<div class="pro-img">
+						<img class="bg-img" src="http://yfwww.oss-cn-beijing.aliyuncs.com/017e1fba-a8ab-4037-9f9e-1ecd618721e9.png" alt=""></div>
+					<div class="count text-center">
+						<p> <b class="iconfont icon-goumai"></b>
+							<span>15</span>
+							人已购买
+						</p>
+					</div>
+					<div class="btns text-center">
+						<a href="http://www.yunfangdata.com/datamall_015_17255.html" class="btn">查看详情</a>
+						<a href="javascript:;" class="btn purchaseData">立即购买</a>
+					</div>
+				</div> -->
+			</div>
+
+			<div id="" class="blank-page">
+				<div class="blank-person"></div>
+				<div class="blank-word">
+					<ul>
+						<li class="buy-custom" id="demand">需求定制</li>
+						<li>没找到需要的数据？</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="apiDataPage" class="page-list datamall-page clearfix"></div>
+
+		</div>
+	</section>
+	<!-- 底部导航 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="quick-entry">
+      <ul class="footer-link-group list-unstyled">
+       <li><strong>首页</strong></li>
+       <li><a href="http://www.yunfangdata.com/sitemap.html" target="_self">网站地图</a></li>
+      </ul>
+      <ul class="footer-link-group list-unstyled">
+       <li><strong>数据</strong></li>
+       <li><a href="http://www.yunfangdata.com/dataMall.html" target="_self">数据服务</a></li>
+      </ul>
+      <ul class="footer-link-group list-unstyled">
+       <li><strong>行业</strong></li>
+       <li><a href="http://www.yunfangdata.com/jinrong.html" target="_self">金融</a></li>
+       <li><a href="http://www.yunfangdata.com/dishui.html" target="_self">地税</a></li>
+       <li><a href="http://www.yunfangdata.com/pinggu.html" target="_self">评估</a></li>
+       <li><a href="http://www.yunfangdata.com/dichan.html" target="_self">地产</a></li>
+      </ul>
+      <ul class="footer-link-group list-unstyled">
+       <li><strong>产品</strong></li>
+       <li><a href="http://www.yunfangdata.com/houseload.html" target="_self">房估估</a></li>
+       <li><a href="http://pg.yunfangdata.com" target="_blank">评E评</a></li>
+       <li><a href="http://www.yunfangdata.com/datacollection.html" target="_self">外采系统</a></li>
+       <li><a href="http://www.yunfangdata.com/piliangfugu.html" target="_self">批量评估</a></li>
+       <li><a href="http://zhizi.yunfangdata.com/#/login" target="_blank">智子数库</a></li>
+      </ul>
+      <ul class="footer-link-group list-unstyled">
+       <li><strong><a href="http://www.yunfangdata.com/news_001.html" target="_self">研究中心</a></strong></li>
+       <li><a href="http://www.yunfangdata.com/news_001.html" target="_self">市场报告</a></li>
+       <li><a href="http://www.yunfangdata.com/news_002.html" target="_self">精选专题</a></li>
+       <li><a href="http://www.yunfangdata.com/news_003.html" target="_self">房价指数</a></li>
+       <li><a href="http://www.yunfangdata.com/news_004.html" target="_self">云房观点</a></li>
+      </ul>
+      <ul class="footer-link-group list-unstyled">
+       <li><strong><a href="http://www.yunfangdata.com/aboutUs.html" target="_self">关于我们</a></strong></li>
+       <li><a href="http://www.yunfangdata.com/aboutUs.html#companyProfile" target="_self">公司简介</a></li>
+       <li><a href="http://www.yunfangdata.com/aboutUs.html#teamIntroduction" target="_self">团队介绍</a></li>
+       <li><a href="http://www.yunfangdata.com/aboutUs.html#development" target="_self">发展历程</a></li>
+       <li><a href="http://www.yunfangdata.com/aboutUs.html#contactUs" target="_self">联系我们</a></li>
+      </ul>
+      <div class="footer-weixin-code">
+       <div class="img-code">
+        <img src="content/lib/images/yunfangdata_weixin_code.png"/>
+        <p>云房资讯公众号</p>
+       </div>
+       <div class="img-code">
+        <img src="content/lib/images/fanggugu_weixin_code.png"/>
+        <p>房估估公众号</p>
+       </div>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>北京云房数据技术有限责任公司<br>网络经营许可证 京ICP备13050679号-2&copy;2015 房估估Fungugu.com 版权所有</p>
+    </div>
+    </div>
+  </footer>
+
+    <!-- 悬浮导航 -->
+    <section id="fixedContent"></section>
+	<script type="text/javascript" src="content/lib/js/subpage.js"></script>
+	<script type="text/javascript" src="content/lib/js/dataMall.js"></script>
+</body>
+</html>
